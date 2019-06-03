@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C15608422A1901200D463E3 /* EntrenamientosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15608322A1901200D463E3 /* EntrenamientosViewController.swift */; };
+		6C15608722A190B400D463E3 /* ModelEntrenamientos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C15608522A190B400D463E3 /* ModelEntrenamientos.xcdatamodeld */; };
+		6C1560C622A1971900D463E3 /* NuevoEntrenamientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1560C522A1971900D463E3 /* NuevoEntrenamientoViewController.swift */; };
 		6C9CA0342290535300F6BE3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9CA0332290535300F6BE3E /* AppDelegate.swift */; };
 		6C9CA0362290535300F6BE3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9CA0352290535300F6BE3E /* ViewController.swift */; };
 		6C9CA0392290535300F6BE3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9CA0372290535300F6BE3E /* Main.storyboard */; };
 		6C9CA03B2290535500F6BE3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C9CA03A2290535500F6BE3E /* Assets.xcassets */; };
 		6C9CA03E2290535500F6BE3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9CA03C2290535500F6BE3E /* LaunchScreen.storyboard */; };
+		6CC8EC202299B4C700F67D85 /* PaginaWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC8EC1F2299B4C700F67D85 /* PaginaWebViewController.swift */; };
+		6CD6F00022A08759008392A4 /* RegistrarUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6EFFF22A08759008392A4 /* RegistrarUsuarioViewController.swift */; };
+		6CD6F00322A08789008392A4 /* LoginUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6F00222A08789008392A4 /* LoginUserViewController.swift */; };
+		6CE1D647229C604F00E7F07D /* MenuPrincipalStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE1D646229C604F00E7F07D /* MenuPrincipalStoryboard.storyboard */; };
+		6CE1D649229C6A5000E7F07D /* HombrosEjercicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1D648229C6A5000E7F07D /* HombrosEjercicioViewController.swift */; };
+		6CE1D64B229C7AD400E7F07D /* PechosEjerciciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1D64A229C7AD400E7F07D /* PechosEjerciciosViewController.swift */; };
+		6CE1D66D229C969200E7F07D /* MenuEjerciciosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1D66C229C969200E7F07D /* MenuEjerciciosViewController.swift */; };
+		6CF467DE22A1DB520020DCD4 /* JsonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF467DD22A1DB520020DCD4 /* JsonClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C15608322A1901200D463E3 /* EntrenamientosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrenamientosViewController.swift; sourceTree = "<group>"; };
+		6C15608622A190B400D463E3 /* ModelEntrenamientos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelEntrenamientos.xcdatamodel; sourceTree = "<group>"; };
+		6C1560C522A1971900D463E3 /* NuevoEntrenamientoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoEntrenamientoViewController.swift; sourceTree = "<group>"; };
 		6C9CA0302290535300F6BE3E /* LIFEGYM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIFEGYM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9CA0332290535300F6BE3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C9CA0352290535300F6BE3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +36,14 @@
 		6C9CA03A2290535500F6BE3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C9CA03D2290535500F6BE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C9CA03F2290535500F6BE3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CC8EC1F2299B4C700F67D85 /* PaginaWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginaWebViewController.swift; sourceTree = "<group>"; };
+		6CD6EFFF22A08759008392A4 /* RegistrarUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioViewController.swift; sourceTree = "<group>"; };
+		6CD6F00222A08789008392A4 /* LoginUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserViewController.swift; sourceTree = "<group>"; };
+		6CE1D646229C604F00E7F07D /* MenuPrincipalStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuPrincipalStoryboard.storyboard; sourceTree = "<group>"; };
+		6CE1D648229C6A5000E7F07D /* HombrosEjercicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HombrosEjercicioViewController.swift; sourceTree = "<group>"; };
+		6CE1D64A229C7AD400E7F07D /* PechosEjerciciosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PechosEjerciciosViewController.swift; sourceTree = "<group>"; };
+		6CE1D66C229C969200E7F07D /* MenuEjerciciosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEjerciciosViewController.swift; sourceTree = "<group>"; };
+		6CF467DD22A1DB520020DCD4 /* JsonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +60,12 @@
 		6C9CA0272290535300F6BE3E = {
 			isa = PBXGroup;
 			children = (
+				6CF467DD22A1DB520020DCD4 /* JsonClass.swift */,
+				6C15608522A190B400D463E3 /* ModelEntrenamientos.xcdatamodeld */,
+				6CE1D66F229C9F1300E7F07D /* Entrenamientos */,
+				6CE1D66E229C9EC900E7F07D /* Ejercicios */,
+				6CE1D646229C604F00E7F07D /* MenuPrincipalStoryboard.storyboard */,
+				6CC8EC1F2299B4C700F67D85 /* PaginaWebViewController.swift */,
 				6C9CA0322290535300F6BE3E /* LIFEGYM */,
 				6C9CA0312290535300F6BE3E /* Products */,
 			);
@@ -60,8 +88,37 @@
 				6C9CA03A2290535500F6BE3E /* Assets.xcassets */,
 				6C9CA03C2290535500F6BE3E /* LaunchScreen.storyboard */,
 				6C9CA03F2290535500F6BE3E /* Info.plist */,
+				6CD6F00122A08761008392A4 /* LoginRegistro */,
 			);
 			path = LIFEGYM;
+			sourceTree = "<group>";
+		};
+		6CD6F00122A08761008392A4 /* LoginRegistro */ = {
+			isa = PBXGroup;
+			children = (
+				6CD6EFFF22A08759008392A4 /* RegistrarUsuarioViewController.swift */,
+				6CD6F00222A08789008392A4 /* LoginUserViewController.swift */,
+			);
+			name = LoginRegistro;
+			sourceTree = "<group>";
+		};
+		6CE1D66E229C9EC900E7F07D /* Ejercicios */ = {
+			isa = PBXGroup;
+			children = (
+				6CE1D648229C6A5000E7F07D /* HombrosEjercicioViewController.swift */,
+				6CE1D66C229C969200E7F07D /* MenuEjerciciosViewController.swift */,
+				6CE1D64A229C7AD400E7F07D /* PechosEjerciciosViewController.swift */,
+			);
+			name = Ejercicios;
+			sourceTree = "<group>";
+		};
+		6CE1D66F229C9F1300E7F07D /* Entrenamientos */ = {
+			isa = PBXGroup;
+			children = (
+				6C15608322A1901200D463E3 /* EntrenamientosViewController.swift */,
+				6C1560C522A1971900D463E3 /* NuevoEntrenamientoViewController.swift */,
+			);
+			path = Entrenamientos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C9CA03E2290535500F6BE3E /* LaunchScreen.storyboard in Resources */,
+				6CE1D647229C604F00E7F07D /* MenuPrincipalStoryboard.storyboard in Resources */,
 				6C9CA03B2290535500F6BE3E /* Assets.xcassets in Resources */,
 				6C9CA0392290535300F6BE3E /* Main.storyboard in Resources */,
 			);
@@ -136,7 +194,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C9CA0362290535300F6BE3E /* ViewController.swift in Sources */,
+				6CE1D649229C6A5000E7F07D /* HombrosEjercicioViewController.swift in Sources */,
 				6C9CA0342290535300F6BE3E /* AppDelegate.swift in Sources */,
+				6CD6F00022A08759008392A4 /* RegistrarUsuarioViewController.swift in Sources */,
+				6C15608722A190B400D463E3 /* ModelEntrenamientos.xcdatamodeld in Sources */,
+				6CD6F00322A08789008392A4 /* LoginUserViewController.swift in Sources */,
+				6C1560C622A1971900D463E3 /* NuevoEntrenamientoViewController.swift in Sources */,
+				6C15608422A1901200D463E3 /* EntrenamientosViewController.swift in Sources */,
+				6CE1D64B229C7AD400E7F07D /* PechosEjerciciosViewController.swift in Sources */,
+				6CE1D66D229C969200E7F07D /* MenuEjerciciosViewController.swift in Sources */,
+				6CF467DE22A1DB520020DCD4 /* JsonClass.swift in Sources */,
+				6CC8EC202299B4C700F67D85 /* PaginaWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +404,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6C15608522A190B400D463E3 /* ModelEntrenamientos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6C15608622A190B400D463E3 /* ModelEntrenamientos.xcdatamodel */,
+			);
+			currentVersion = 6C15608622A190B400D463E3 /* ModelEntrenamientos.xcdatamodel */;
+			path = ModelEntrenamientos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6C9CA0282290535300F6BE3E /* Project object */;
 }
