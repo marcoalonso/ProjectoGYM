@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PAGOS-->
         <scene sceneID="wlm-C1-vt6">
             <objects>
                 <viewController id="CUa-hl-4Zk" sceneMemberID="viewController">
@@ -21,25 +21,25 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calendario de Pagos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXH-Uj-GMu">
                                 <rect key="frame" x="16" y="20" width="288" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhatsApp Image 2019-05-30 at 5.59.34 PM" translatesAutoresizingMaskIntoConstraints="NO" id="g0R-sc-rsT">
-                                <rect key="frame" x="0.0" y="52" width="320" height="379"/>
+                                <rect key="frame" x="0.0" y="52" width="320" height="467"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="h6z-G2-Tg2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="history" id="oN0-sQ-GJE"/>
+                    <tabBarItem key="tabBarItem" title="PAGOS" image="icons8-calendario-12-filled-75" id="oN0-sQ-GJE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yHt-rP-ifG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-331.875" y="116.25"/>
+            <point key="canvasLocation" x="-331.875" y="116.19718309859155"/>
         </scene>
-        <!--View Controller-->
+        <!--DIETAS-->
         <scene sceneID="FX2-bT-fup">
             <objects>
                 <viewController id="gow-Oq-Zzr" sceneMemberID="viewController">
@@ -71,52 +71,58 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.19304078817367554" green="0.80907702445983887" blue="0.073074378073215485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tFT-RS-J1R"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="cwa-Yo-QL7"/>
+                    <tabBarItem key="tabBarItem" title="DIETAS" image="icons8-comida-vegetariana-filled-75" id="cwa-Yo-QL7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RDH-Ua-3un" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="609.375" y="97.5"/>
         </scene>
-        <!--View Controller-->
+        <!--UBICANOS-->
         <scene sceneID="c6l-7z-vuw">
             <objects>
-                <viewController id="lC4-YY-lAc" sceneMemberID="viewController">
+                <viewController id="lC4-YY-lAc" customClass="NosotrosViewController" customModule="LIFEGYM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jJS-WX-foO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOSOSTROS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YH-ww-MVh">
-                                <rect key="frame" x="109" y="69" width="103" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOSOSTROS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YH-ww-MVh">
+                                <rect key="frame" x="16" y="20" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="WhatsApp Image 2019-05-27 at 5.47.33 PM" translatesAutoresizingMaskIntoConstraints="NO" id="kxE-D3-F95">
-                                <rect key="frame" x="16" y="108" width="288" height="170"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vr0-VT-xRm">
+                                <rect key="frame" x="0.0" y="49" width="320" height="297"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZe-NO-RKQ">
+                                <rect key="frame" x="16" y="477" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="qxt-0t-cCp">
-                                <rect key="frame" x="16" y="286" width="288" height="145"/>
+                                <rect key="frame" x="0.0" y="354" width="320" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Somos una empresa comprometida con sus clientes y queremos que siempre tengan lo mejor. Pueden ubicarnos en la av torreon nuevo en la colonia Torron Nuevo. Tel. 443- 313-5199</string>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Conoce nuestras mejores instalaciones ubicadas en  la av torreon nuevo en la colonia Torron Nuevo. Tel. 443- 313-5199 Visitra nuestra pagina web y redes sociales www.smartfit.com.mx     Facebook: All Black`s GYM</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IWT-qo-ZTA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="BHC-gU-qFt"/>
+                    <tabBarItem key="tabBarItem" title="UBICANOS" image="mapa" id="BHC-gU-qFt"/>
+                    <connections>
+                        <outlet property="mapa" destination="Vr0-VT-xRm" id="BRw-NY-ztJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Mc-bv-7xz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1535.625" y="437.5"/>
+            <point key="canvasLocation" x="1535.625" y="437.32394366197184"/>
         </scene>
         <!--EJERCICIOS-->
         <scene sceneID="I4G-4p-unQ">
@@ -497,6 +503,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="Zgo-W3-xRQ" kind="relationship" relationship="viewControllers" id="dYv-9t-LFT"/>
@@ -510,11 +518,11 @@
             </objects>
             <point key="canvasLocation" x="-1249" y="-206"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--EJERCICIOS-->
         <scene sceneID="Bh6-LK-iKc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zgo-W3-xRQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="cyh-ra-MEO"/>
+                    <tabBarItem key="tabBarItem" title="EJERCICIOS" image="icons8-pesa-filled-75" id="cyh-ra-MEO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="tda-3L-4Qs">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -537,11 +545,11 @@
             </objects>
             <point key="canvasLocation" x="-479.19999999999999" y="-603.14842578710648"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--ENTRENAMIENTOS-->
         <scene sceneID="hpL-rL-duI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="an8-zk-kHh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" systemItem="bookmarks" id="Z1y-FV-xbp"/>
+                    <tabBarItem key="tabBarItem" title="ENTRENAMIENTOS" image="icons8-ejercicio-filled-75" id="Z1y-FV-xbp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="rTf-Od-pyR">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -571,7 +579,6 @@
     <resources>
         <image name="CUERPO4" width="640" height="266.33334350585938"/>
         <image name="CUERPO5" width="258.33334350585938" height="193.33332824707031"/>
-        <image name="WhatsApp Image 2019-05-27 at 5.47.33 PM" width="180" height="390"/>
         <image name="WhatsApp Image 2019-05-30 at 5.59.34 PM" width="213.33332824707031" height="378.66665649414062"/>
         <image name="cuerpo" width="233.33332824707031" height="166.66667175292969"/>
         <image name="cuerpo2" width="242.66667175292969" height="166.66667175292969"/>
@@ -581,5 +588,10 @@
         <image name="dieta2" width="150" height="100"/>
         <image name="dieta3" width="400" height="225"/>
         <image name="dieta4" width="175.33332824707031" height="116.66666412353516"/>
+        <image name="icons8-calendario-12-filled-75" width="25" height="25"/>
+        <image name="icons8-comida-vegetariana-filled-75" width="25" height="25"/>
+        <image name="icons8-ejercicio-filled-75" width="25" height="25"/>
+        <image name="icons8-pesa-filled-75" width="25" height="25"/>
+        <image name="mapa" width="25" height="25"/>
     </resources>
 </document>
