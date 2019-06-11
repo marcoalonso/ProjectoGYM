@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import SQLite3
 
 class LoginUserViewController: UIViewController, UITextFieldDelegate {
+     var db: OpaquePointer?
     @IBOutlet weak var correo: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var tituloNombre: UILabel!
+    
+    var correoBD: String = ""
     
      let dataJsonUrlClass = JsonClass()
     
@@ -27,6 +32,34 @@ class LoginUserViewController: UIViewController, UITextFieldDelegate {
 
         correo.text = recibirCorreo
         password.text = recibirPassword
+        
+        //SQlite
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.sizeToFit()
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+                                            target: nil, action: nil)
+        let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done,
+                                            target: view, action: #selector(UIView.endEditing(_:)))
+        keyboardToolbar.items = [flexBarButton, doneBarButton]
+        correo.inputAccessoryView = keyboardToolbar
+        password.inputAccessoryView = keyboardToolbar
+        
+        
+        
+        let fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("login.sqlite")
+        
+        if sqlite3_open(fileUrl.path, &db) != SQLITE_OK {
+            print("Error al abrir la base de datos")
+        }
+        
+        let create = "CREATE TABLE IF NOT EXISTS usuarios(id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT,user TEXT, password TEXT, correo TEXT)"
+        
+        
+        if sqlite3_exec(db, create, nil, nil, nil) != SQLITE_OK {
+            print("Error al crear la tabla")
+        }else{
+            print("creada")
+        }
     }
     
     //ocultar teclado
@@ -87,6 +120,64 @@ class LoginUserViewController: UIViewController, UITextFieldDelegate {
                 
                 
             }
+        }
+    }
+    @IBAction func loginLocal(_ sender: UIButton) {
+        let SQLITE_TRANSIENT = unsafeBitCast(OpaquePointer(bitPattern: -1), to: sqlite3_destructor_type.self)
+        let queryStatementString = "SELECT * FROM usuarios where user=? and password=?;"
+        var queryStatement: OpaquePointer? = nil
+        //let guardarCorreo: String
+        
+        if sqlite3_prepare_v2(db, queryStatementString, -1, &queryStatement, nil) == SQLITE_OK {
+            
+            if sqlite3_bind_text(queryStatement, 1,correo.text, -1, SQLITE_TRANSIENT) != SQLITE_OK{
+                print("Error nombre")
+            }
+            if sqlite3_bind_text(queryStatement, 2,password.text, -1, SQLITE_TRANSIENT) != SQLITE_OK{
+                print("Error nombre")
+            }
+            
+            
+            
+            if sqlite3_step(queryStatement) == SQLITE_ROW{
+                
+                
+               
+                let queryResultCol1 = sqlite3_column_text (queryStatement, 4 )
+                let correo = String (cString: queryResultCol1!)
+                
+                self.performSegue(withIdentifier: "inicio", sender: self)
+                
+                correoBD = correo
+                print(correoBD)
+                tituloNombre.text=correoBD
+                
+            }
+            else{
+                self.performSegue(withIdentifier: "registro", sender: self)
+            }
+            
+        } else {
+            print("Sentencia SELECT no pudo ser preparada")
+        }
+        
+        sqlite3_finalize(queryStatement)
+       
+        
+        
+       
+        performSegue(withIdentifier: "enviar", sender: self)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "enviar"{
+            let destino = segue.destination as! InicioPruebaViewController
+           
+            
+             destino.nombre2 = correoBD
+            
+            
         }
     }
     
