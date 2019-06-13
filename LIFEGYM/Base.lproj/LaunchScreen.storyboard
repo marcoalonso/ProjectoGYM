@@ -18,19 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GYMBLACK" translatesAutoresizingMaskIntoConstraints="NO" id="zlR-r6-PV4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GYMBLACK" translatesAutoresizingMaskIntoConstraints="NO" id="zlR-r6-PV4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLACK GYM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6X-Xm-WsO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BLACK GYM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6X-Xm-WsO">
                                 <rect key="frame" x="49" y="306" width="276" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="45"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zlR-r6-PV4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="01J-XP-5vE"/>
+                            <constraint firstItem="zlR-r6-PV4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="38b-3o-L6U"/>
+                            <constraint firstAttribute="trailing" secondItem="zlR-r6-PV4" secondAttribute="trailing" id="JVL-1b-VLV"/>
+                            <constraint firstItem="zlR-r6-PV4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QRZ-vk-IYN"/>
+                            <constraint firstItem="M6X-Xm-WsO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="ZnD-KV-8Na"/>
+                            <constraint firstItem="zlR-r6-PV4" firstAttribute="centerY" secondItem="M6X-Xm-WsO" secondAttribute="centerY" id="aMS-fB-Gmz"/>
+                            <constraint firstItem="M6X-Xm-WsO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="286" id="tSN-p8-S9u"/>
+                            <constraint firstItem="zlR-r6-PV4" firstAttribute="centerX" secondItem="M6X-Xm-WsO" secondAttribute="centerX" id="xyd-hQ-9Yu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

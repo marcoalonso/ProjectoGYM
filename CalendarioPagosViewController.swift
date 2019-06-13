@@ -10,7 +10,7 @@ import UIKit
 
 class CalendarioPagosViewController: UIViewController {
 
-    let URL_HEROES = "http://192.168.64.2/restful/index.php/Pruebasdb/ejercicio";
+    let URL_HEROES = "http://ferlectronics.com/restful/index.php/Pruebasdb/fecha_pago";
     //A string array to save all the names
     var nameArray = [String]()
     
