@@ -10,9 +10,8 @@ import UIKit
 
 struct Citas: Codable {
     let id: String
-    let id_user: String
-    let concepto: String
-    let fecha_pago : String
+    let fecha: String
+    let nombre_user: String
 }
 
 class VerCitasViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
@@ -30,7 +29,7 @@ class VerCitasViewController: UIViewController,UITableViewDataSource, UITableVie
     }
     func obtenerCitas(){
         
-        guard let datos = URL(string: "http://ferlectronics.com/pagosgym/restful/index.php/Pruebasdb/fecha_pagos") else { return }
+        guard let datos = URL(string: "http://ferlectronics.com/pagosgym/restful/index.php/Pruebasdb/citas") else { return }
         let url = URLRequest(url: datos)
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -59,8 +58,8 @@ class VerCitasViewController: UIViewController,UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tablaCitas.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let user = usuarios[indexPath.row]
-        cell.textLabel?.text = user.concepto
-        cell.detailTextLabel?.text = user.fecha_pago
+        cell.textLabel?.text = user.nombre_user
+        cell.detailTextLabel?.text = user.fecha
         return cell
     }
 

@@ -70,7 +70,7 @@ class AgendarCitaViewController: UIViewController {
     @IBAction func agendarCita(_ sender: Any) {
       
         let datos = "fecha=\(fechaCita.text!)&nombre_user=\(nombreCita.text!)"
-        let url = URL(string: "http://localhost:8080/pagos/registra.php")!
+        let url = URL(string: "http://ferlectronics.com/pagosgym/citas/registra.php")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.httpBody = datos.data(using: .utf8)

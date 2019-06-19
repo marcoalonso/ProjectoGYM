@@ -514,7 +514,7 @@ Cena: una ensalada de aguacate con láminas de salmón ahumado. Un revuelto de u
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nosotros" translatesAutoresizingMaskIntoConstraints="NO" id="sGl-Hf-HoL">
-                                <rect key="frame" x="0.0" y="64" width="320" height="245"/>
+                                <rect key="frame" x="0.0" y="64" width="320.00000000000011" height="245"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WfR-ZH-rwM">
                                 <rect key="frame" x="0.0" y="309" width="320" height="170"/>
@@ -656,7 +656,7 @@ Cena: una ensalada de aguacate con láminas de salmón ahumado. Un revuelto de u
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ZFi-iC-OBR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
