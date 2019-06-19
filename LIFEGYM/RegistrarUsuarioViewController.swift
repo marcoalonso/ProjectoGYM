@@ -180,12 +180,12 @@ class RegistrarUsuarioViewController: UIViewController, UITextFieldDelegate {
                         if mensaje == "SI"{
                             self.mensajeError.isHidden = false
                             self.mensajeError.text = "Registro exitoso"
-                            //print("Registro exitoso")
+                            print("Registro exitoso")
                             self.performSegue(withIdentifier: "login", sender: self)
                         }
                         else if mensaje == "Repetido"{
                             self.mensajeError.isHidden = false
-                            self.mensajeError.text = "Usuario ya existe"
+                            self.mensajeError.text = "El usuario ya existe"
                             //print("usuario ya existente, ingrese otro")
                             self.usuario.text = ""
                         }
