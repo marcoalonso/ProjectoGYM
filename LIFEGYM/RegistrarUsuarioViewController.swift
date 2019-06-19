@@ -10,17 +10,21 @@ import UIKit
 import SQLite3
 
 class RegistrarUsuarioViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var usuario: UITextField!
+    @IBOutlet weak var nombre: UITextField!
+    @IBOutlet weak var correo: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var mensajeError: UILabel!
     
     var db: OpaquePointer?
     
-    @IBOutlet weak var nombre: UITextField!
-    @IBOutlet weak var usuario: UITextField!
-    @IBOutlet weak var correo: UITextField!
-    @IBOutlet weak var password: UITextField!
-    @IBOutlet weak var registrarBtn: UIButton!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        mensajeError.isHidden = true
         
         //delegados
         usuario.delegate = self
@@ -50,34 +54,32 @@ class RegistrarUsuarioViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func registrar(_ sender: Any) {
-        
-        //enviar datos a Login
-        performSegue(withIdentifier: "enviarDatosLogin", sender: self)
+    @IBAction func registroLocal(_ sender: Any) {
+        guard let _ = nombre.text, nombre.text?.count != 0 else {
             
-    }
-    
-    //datos a enviar a Login
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "enviarDatosLogin"{
-            let destino = segue.destination as! LoginUserViewController
-            destino.recibirCorreo = correo.text
-            destino.recibirPassword = password.text
+            mensajeError.isHidden = false
+            mensajeError.text = "¡Introduce un nombre!"
+            return
         }
-    }
+        guard let _ = usuario.text, usuario.text?.count != 0 else {
+            
+            mensajeError.isHidden = false
+            mensajeError.text = "¡Introduce un usuario!"
+            return
+        }
+        guard let _ = correo.text, correo.text?.count != 0 else {
+            
+            mensajeError.isHidden = false
+            mensajeError.text = "¡Introduce un correo!"
+            return
+        }
+        guard let _ = password.text, password.text?.count != 0 else {
+            
+            mensajeError.isHidden = false
+            mensajeError.text = "¡Introduce una contraseña!"
+            return
+        }
         
-    //ocultar teclado
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-
-
-    @IBAction func registroLocal(_ sender: UIButton) {
         let SQLITE_TRANSIENT = unsafeBitCast(OpaquePointer(bitPattern: -1), to: sqlite3_destructor_type.self)
         
         var stmt: OpaquePointer?
@@ -103,7 +105,9 @@ class RegistrarUsuarioViewController: UIViewController, UITextFieldDelegate {
         }
         
         if sqlite3_step(stmt) == SQLITE_DONE{
-            print("Registro exitoso")
+            mensajeError.isHidden = false
+            mensajeError.text = "Registro exitoso"
+            //print("Registro exitoso")
             self.performSegue(withIdentifier: "login", sender: self)
         }
         
@@ -112,7 +116,101 @@ class RegistrarUsuarioViewController: UIViewController, UITextFieldDelegate {
         nombre.text = ""
         correo.text = ""
         sqlite3_finalize(stmt)
-        
-        
     }
+    
+    
+    
+    
+    
+    @IBAction func registroRemoto(_ sender: Any) {
+        guard let _ = nombre.text, nombre.text?.count != 0 else {
+            
+            mensajeError.isHidden = false
+            mensajeError.text = "¡Introduce un nombre!"
+            return
+        }
+        guard let _ = usuario.text, usuario.text?.count != 0 else {
+            
+            mensajeError.isHidden = false
+            mensajeError.text = "¡Introduce un usuario!"
+            return
+        }
+        guard let _ = correo.text, correo.text?.count != 0 else {
+            
+            mensajeError.isHidden = false
+            mensajeError.text = "¡Introduce un correo!"
+            return
+        }
+        guard let _ = password.text, password.text?.count != 0 else {
+            
+            mensajeError.isHidden = false
+            mensajeError.text = "¡Introduce una contraseña!"
+            return
+        }
+        
+        let datos = "usuario=\(usuario.text!)&contra=\(password.text!)&nombre=\(nombre.text!)&correo=\(correo.text!)"
+        let url = URL(string: "http://ferlectronics.com/gymlogin/login/registra.php")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = datos.data(using: .utf8)
+        
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else {//si existe un error se termina la funcion
+                print("Error en el servidor")
+                
+                print("solicitud fallida \(error)")
+                return
+            }
+            
+            do {//creamos nuestro objeto json
+                
+                print("recibimos respuesta")
+                
+                
+                if let json = try JSONSerialization.jsonObject(with: data) as? [String: String] {
+                    
+                    
+                    DispatchQueue.main.async {//proceso principal
+                        
+                        let mensaje = json["mensaje"]
+                        
+                        // print(mensaje)
+                        
+                        if mensaje == "SI"{
+                            self.mensajeError.isHidden = false
+                            self.mensajeError.text = "Registro exitoso"
+                            //print("Registro exitoso")
+                            self.performSegue(withIdentifier: "login", sender: self)
+                        }
+                        else if mensaje == "Repetido"{
+                            self.mensajeError.isHidden = false
+                            self.mensajeError.text = "Usuario ya existe"
+                            //print("usuario ya existente, ingrese otro")
+                            self.usuario.text = ""
+                        }
+                        else{
+                            print("Algo salió mal")
+                        }
+                        
+                        
+                    }
+                }
+                
+            } catch let parseError {//manejamos el error
+                print("error al parsear: \(parseError)")
+                print("Erro del servidor (JSON)")
+                
+                let responseString = String(data: data, encoding: .utf8)
+                print("respuesta : \(responseString)")
+            }
+        }
+        task.resume()
+    }
+    
+    @IBAction func irLogin(_ sender: Any) {
+         self.dismiss(animated: true, completion: nil )
+    }
+    
+    
 }

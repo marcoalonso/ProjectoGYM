@@ -13,6 +13,7 @@ import CoreData
 class NuevoEntrenamientoViewController: UIViewController {
     @IBOutlet weak var nombre: UITextField!
     @IBOutlet weak var descripcion: UITextField!
+    @IBOutlet weak var mensajeGuardar: UILabel!
     
     
     
@@ -24,6 +25,15 @@ class NuevoEntrenamientoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.sizeToFit()
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+                                            target: nil, action: nil)
+        let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done,
+                                            target: view, action: #selector(UIView.endEditing(_:)))
+        keyboardToolbar.items = [flexBarButton, doneBarButton]
+        nombre.inputAccessoryView = keyboardToolbar
+        descripcion.inputAccessoryView = keyboardToolbar
        
     }
     
@@ -38,6 +48,7 @@ class NuevoEntrenamientoViewController: UIViewController {
             try contexto.save()
             nombre.text = ""
             descripcion.text = ""
+            mensajeGuardar.text = "¡Guardado correctamente!"
             print("Se guardo correctamente")
         } catch let error as NSError{
             print("Error al guardar", error.localizedDescription)

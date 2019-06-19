@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0F35CB22B8164E00A18190 /* RealizarPagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0F35CA22B8164E00A18190 /* RealizarPagoViewController.swift */; };
+		6C0F35CD22B81B5500A18190 /* CoordenadasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0F35CC22B81B5500A18190 /* CoordenadasViewController.swift */; };
 		6C15608422A1901200D463E3 /* EntrenamientosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15608322A1901200D463E3 /* EntrenamientosViewController.swift */; };
 		6C15608722A190B400D463E3 /* ModelEntrenamientos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C15608522A190B400D463E3 /* ModelEntrenamientos.xcdatamodeld */; };
 		6C1560C622A1971900D463E3 /* NuevoEntrenamientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1560C522A1971900D463E3 /* NuevoEntrenamientoViewController.swift */; };
 		6C1E86F022B04071002FC226 /* NosotrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E86EF22B04071002FC226 /* NosotrosViewController.swift */; };
+		6C395D8F22B960FE007F931D /* AgendarCitaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395D8E22B960FE007F931D /* AgendarCitaViewController.swift */; };
 		6C3CCA7222B2A8FD0004C198 /* CalendarioPagosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CCA7122B2A8FD0004C198 /* CalendarioPagosViewController.swift */; };
 		6C3CCA7422B2AC2D0004C198 /* DietasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CCA7322B2AC2D0004C198 /* DietasViewController.swift */; };
 		6C9CA0342290535300F6BE3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9CA0332290535300F6BE3E /* AppDelegate.swift */; };
@@ -29,10 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C0F35CA22B8164E00A18190 /* RealizarPagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealizarPagoViewController.swift; sourceTree = "<group>"; };
+		6C0F35CC22B81B5500A18190 /* CoordenadasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordenadasViewController.swift; sourceTree = "<group>"; };
 		6C15608322A1901200D463E3 /* EntrenamientosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntrenamientosViewController.swift; sourceTree = "<group>"; };
 		6C15608622A190B400D463E3 /* ModelEntrenamientos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelEntrenamientos.xcdatamodel; sourceTree = "<group>"; };
 		6C1560C522A1971900D463E3 /* NuevoEntrenamientoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoEntrenamientoViewController.swift; sourceTree = "<group>"; };
 		6C1E86EF22B04071002FC226 /* NosotrosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NosotrosViewController.swift; sourceTree = "<group>"; };
+		6C395D8E22B960FE007F931D /* AgendarCitaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendarCitaViewController.swift; sourceTree = "<group>"; };
 		6C3CCA7122B2A8FD0004C198 /* CalendarioPagosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioPagosViewController.swift; sourceTree = "<group>"; };
 		6C3CCA7322B2AC2D0004C198 /* DietasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietasViewController.swift; sourceTree = "<group>"; };
 		6C9CA0302290535300F6BE3E /* LIFEGYM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIFEGYM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +72,9 @@
 		6C9CA0272290535300F6BE3E = {
 			isa = PBXGroup;
 			children = (
+				6C395D8E22B960FE007F931D /* AgendarCitaViewController.swift */,
+				6C0F35CC22B81B5500A18190 /* CoordenadasViewController.swift */,
+				6C0F35CA22B8164E00A18190 /* RealizarPagoViewController.swift */,
 				6C3CCA7322B2AC2D0004C198 /* DietasViewController.swift */,
 				6C3CCA7122B2A8FD0004C198 /* CalendarioPagosViewController.swift */,
 				6C1E86EF22B04071002FC226 /* NosotrosViewController.swift */,
@@ -204,10 +213,13 @@
 			files = (
 				6C9CA0362290535300F6BE3E /* ViewController.swift in Sources */,
 				6CE1D649229C6A5000E7F07D /* HombrosEjercicioViewController.swift in Sources */,
+				6C0F35CD22B81B5500A18190 /* CoordenadasViewController.swift in Sources */,
 				6C9CA0342290535300F6BE3E /* AppDelegate.swift in Sources */,
+				6C395D8F22B960FE007F931D /* AgendarCitaViewController.swift in Sources */,
 				6CD6F00022A08759008392A4 /* RegistrarUsuarioViewController.swift in Sources */,
 				6C15608722A190B400D463E3 /* ModelEntrenamientos.xcdatamodeld in Sources */,
 				6CD6F00322A08789008392A4 /* LoginUserViewController.swift in Sources */,
+				6C0F35CB22B8164E00A18190 /* RealizarPagoViewController.swift in Sources */,
 				6C1E86F022B04071002FC226 /* NosotrosViewController.swift in Sources */,
 				6C3CCA7222B2A8FD0004C198 /* CalendarioPagosViewController.swift in Sources */,
 				6C1560C622A1971900D463E3 /* NuevoEntrenamientoViewController.swift in Sources */,

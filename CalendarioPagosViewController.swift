@@ -8,17 +8,94 @@
 
 import UIKit
 
-class CalendarioPagosViewController: UIViewController {
+struct User: Codable {
+    let id: String
+    let id_user: String
+    let concepto: String
+    let fecha_pago : String
+}
 
+class CalendarioPagosViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+    
+     private let refreshControl = UIRefreshControl()
+    
+
+    @IBOutlet weak var tabla: UITableView!
+    
+    
     let URL_HEROES = "http://ferlectronics.com/restful/index.php/Pruebasdb/fecha_pago";
     //A string array to save all the names
     var nameArray = [String]()
     
     @IBOutlet weak var fechaPagoLabel: UILabel!
+    
+     var usuarios = [User]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        getDateJson();
+        tabla.reloadData()
+        
+        
+        getPagos()
+        getDateJson()
+        
+        //refreshcontrol Actualizar nuevos entrenamientos
+        refreshControl.addTarget(self, action: #selector(reload), for: .valueChanged)
+        tabla.addSubview(refreshControl)
+        view.bringSubviewToFront(refreshControl)
+    }
+    //refreshControl para actualizar pagos
+    @objc private func reload(){
+        //mostrarDatos()
+        getPagos()
+        getDateJson()
+        tabla.reloadData()
+        refreshControl.endRefreshing()
+    }
+    
+    
+    func cargarNuevoPAgo(){
+        tabla.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return usuarios.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        cargarNuevoPAgo()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tabla.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let user = usuarios[indexPath.row]
+        cell.textLabel?.text = user.concepto
+        cell.detailTextLabel?.text = user.fecha_pago
+        return cell
+    }
+    
+    
+    func getPagos(){
+        guard let datos = URL(string: "http://ferlectronics.com/pagosgym/restful/index.php/Pruebasdb/fecha_pagos") else { return }
+        let url = URLRequest(url: datos)
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            if let response = response {
+                print("Respuesta del server : \(response)")
+            }
+            
+            do{
+                self.usuarios = try JSONDecoder().decode([User].self, from: data!)
+                
+                DispatchQueue.main.async {
+                    self.tabla.reloadData()
+                }
+            } catch let error as NSError{
+                print("error al cargar", error.localizedDescription)
+                
+            }
+        }.resume()
     }
     
     func getDateJson(){
