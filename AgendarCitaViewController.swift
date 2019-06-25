@@ -57,15 +57,7 @@ class AgendarCitaViewController: UIViewController {
         view.endEditing(true)
     }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func agendarCita(_ sender: Any) {
       
@@ -80,7 +72,7 @@ class AgendarCitaViewController: UIViewController {
             guard let data = data else {//si existe un error se termina la funcion
                 print("Error en el servidor")
                 
-                print("solicitud fallida \(error)")
+                print("solicitud fallida \(String(describing: error))")
                 return
             }
             
@@ -116,7 +108,7 @@ class AgendarCitaViewController: UIViewController {
                 print("Erro del servidor (JSON)")
                 
                 let responseString = String(data: data, encoding: .utf8)
-                print("respuesta : \(responseString)")
+                print("respuesta : \(String(describing: responseString))")
             }
         }
         task.resume()

@@ -9,10 +9,12 @@
 import UIKit
 
 struct Usuario: Codable {
-    let id: String
-    let id_user: String
-    let concepto: String
-    let fecha_pago : String
+    let id_usuario: String
+    let nombre: String
+    let usuario : String
+    let contra : String
+    let correo : String
+    
 }
 
 class VerUsuariosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -29,7 +31,7 @@ class VerUsuariosViewController: UIViewController, UITableViewDelegate, UITableV
         // Do any additional setup after loading the view.
     }
     func obtenerUsuarios(){
-        guard let datos = URL(string: "http://ferlectronics.com/pagosgym/restful/index.php/Pruebasdb/fecha_pagos") else { return }
+        guard let datos = URL(string: "http://ferlectronics.com/pagosgym/restful/index.php/Pruebasdb/get_usuarios") else { return }
         let url = URLRequest(url: datos)
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -58,8 +60,8 @@ class VerUsuariosViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tablaUsuarios.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let user = usuarios[indexPath.row]
-        cell.textLabel?.text = user.concepto
-        cell.detailTextLabel?.text = user.fecha_pago
+        cell.textLabel?.text = user.usuario
+        cell.detailTextLabel?.text = user.correo
         return cell
     }
     /*

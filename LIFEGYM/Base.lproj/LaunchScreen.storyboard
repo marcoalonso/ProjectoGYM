@@ -18,17 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GYMBLACK" translatesAutoresizingMaskIntoConstraints="NO" id="zlR-r6-PV4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GYMBLACK" translatesAutoresizingMaskIntoConstraints="NO" id="zlR-r6-PV4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALL BLACK`S GYM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnt-ee-dGK">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="zlR-r6-PV4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="3Vw-qV-yAj"/>
-                            <constraint firstAttribute="trailing" secondItem="zlR-r6-PV4" secondAttribute="trailing" id="6Zi-gN-EgN"/>
-                            <constraint firstItem="zlR-r6-PV4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="CRa-iN-3VQ"/>
-                            <constraint firstItem="zlR-r6-PV4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aiA-Po-1V4"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

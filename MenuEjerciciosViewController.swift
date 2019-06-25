@@ -19,6 +19,13 @@ class MenuEjerciciosViewController: UIViewController {
         backgroundImage.contentMode = UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
     }
+    @IBAction func cierraSesion(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func salir(_ sender: UIBarButtonItem) {
+        exit(0)
+        //self.dismiss(animated: true, completion: nil)
+    }
     
 
     /*
