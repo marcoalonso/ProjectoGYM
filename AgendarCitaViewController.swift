@@ -47,6 +47,11 @@ class AgendarCitaViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    fechaCita.resignFirstResponder()
+    return true
+    }
+    
     @objc func datePickerChanged(_ sender: UIDatePicker) {
         
         fechaCita.text = dateFormatter.string(from: sender.date)
@@ -54,12 +59,25 @@ class AgendarCitaViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        view.endEditing(true)
+        self.view.endEditing(true)
     }
 
 
 
     @IBAction func agendarCita(_ sender: Any) {
+        
+        guard let fecha = nombreCita.text, nombreCita.text?.count != 0 else {
+            
+            mensajeFecha.isHidden = false
+            mensajeFecha.text = "¡Introduce tu nombre!"
+            return
+        }
+        guard let nombre = fechaCita.text, fechaCita.text?.count != 0 else {
+            
+            mensajeFecha.isHidden = false
+            mensajeFecha.text = "¡Introduce una fecha!"
+            return
+        }
       
         let datos = "fecha=\(fechaCita.text!)&nombre_user=\(nombreCita.text!)"
         let url = URL(string: "http://ferlectronics.com/pagosgym/citas/registra.php")!

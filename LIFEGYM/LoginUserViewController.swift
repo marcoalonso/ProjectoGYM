@@ -112,7 +112,14 @@ class LoginUserViewController: UIViewController {
                             task.resume()
                         }
                         else{
+                            let alerta = UIAlertController(title: "El Usuario \(self.usuario.text!) No Existe", message: "¡FAVOR DE REGISTRAR USUARIO!", preferredStyle: .alert)
+                            let accion = UIAlertAction(title: "Aceptar", style: .default) { (_) in
+
                             self.performSegue(withIdentifier: "registro", sender: self)
+                            }
+                            
+                            alerta.addAction(accion)
+                            self.present(alerta, animated: true, completion: nil)
                         }
                         
                         

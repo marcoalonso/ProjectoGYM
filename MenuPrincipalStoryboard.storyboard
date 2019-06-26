@@ -281,116 +281,52 @@
         <!--DIETAS-->
         <scene sceneID="jtB-yF-tvF">
             <objects>
-                <viewController id="5Sw-9f-bdr" sceneMemberID="viewController">
+                <viewController id="5Sw-9f-bdr" customClass="DietasViewController" customModule="LIFEGYM" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MRN-So-lBK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y47-9y-cyE">
-                                <rect key="frame" x="16" y="208" width="288" height="82"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6G-7o-Spr">
+                                <rect key="frame" x="20" y="64" width="284" height="91"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="lXl-Hd-RSn"/>
+                                    <constraint firstAttribute="height" constant="91" id="Zza-ci-SNm"/>
                                 </constraints>
-                                <state key="normal" image="dieta1"/>
-                                <connections>
-                                    <segue destination="LWw-89-bOW" kind="show" id="vuX-uh-Bzc"/>
-                                </connections>
+                                <state key="normal" backgroundImage="dieta1"/>
                             </button>
-                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgN-8m-u1I">
-                                <rect key="frame" x="16" y="321" width="288" height="82"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf0-cZ-xdr">
+                                <rect key="frame" x="16" y="181" width="288" height="91"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="yJn-xv-Zc6"/>
+                                    <constraint firstAttribute="height" constant="91" id="iPJ-ED-dHR"/>
                                 </constraints>
-                                <state key="normal" image="dieta2"/>
-                                <connections>
-                                    <segue destination="frP-bm-HgW" kind="show" id="Zxk-do-NjV"/>
-                                </connections>
+                                <state key="normal" backgroundImage="dieta2"/>
                             </button>
-                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBe-e3-hdm">
-                                <rect key="frame" x="16" y="431" width="288" height="82"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" image="dieta4"/>
-                                <connections>
-                                    <segue destination="JMc-si-cip" kind="show" id="fgX-jg-BrN"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuS-ja-M2L">
+                                <rect key="frame" x="16" y="299" width="288" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="b6O-6R-wcP"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="dieta3"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohidratos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seN-Au-V4g">
-                                <rect key="frame" x="16" y="64" width="288" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Jwa-JT-o1n"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fibras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqi-8n-4ws">
-                                <rect key="frame" x="16" y="183" width="288" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="e6I-7s-csv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frutas " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDf-3S-1tc">
-                                <rect key="frame" x="16" y="296" width="288" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="8vb-yV-ztm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URb-KI-U53">
-                                <rect key="frame" x="16" y="93" width="288" height="82"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="oFo-Fn-fKe"/>
-                                </constraints>
-                                <state key="normal" image="dieta3"/>
-                                <connections>
-                                    <segue destination="fUJ-oR-i6T" kind="show" id="q8A-Sc-Mf3"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVk-t3-JTm">
+                                <rect key="frame" x="20" y="413" width="284" height="106"/>
+                                <state key="normal" backgroundImage="dieta4"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verduras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGI-Yf-1KC">
-                                <rect key="frame" x="16" y="405" width="288" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="ybS-qk-tKp"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.19304078820000001" green="0.80907702449999996" blue="0.073074378070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="seN-Au-V4g" firstAttribute="trailing" secondItem="MRN-So-lBK" secondAttribute="trailingMargin" id="2pE-fJ-DXT"/>
-                            <constraint firstItem="URb-KI-U53" firstAttribute="trailing" secondItem="Kqi-8n-4ws" secondAttribute="trailing" id="3US-lR-aZU"/>
-                            <constraint firstItem="tGI-Yf-1KC" firstAttribute="top" secondItem="qgN-8m-u1I" secondAttribute="bottom" constant="2" id="4Iy-BB-1I1"/>
-                            <constraint firstItem="tGI-Yf-1KC" firstAttribute="trailing" secondItem="JBe-e3-hdm" secondAttribute="trailing" id="55t-0E-u7I"/>
-                            <constraint firstItem="Y47-9y-cyE" firstAttribute="trailing" secondItem="IDf-3S-1tc" secondAttribute="trailing" id="79U-zB-QGm"/>
-                            <constraint firstItem="jVW-JU-WcP" firstAttribute="bottom" secondItem="JBe-e3-hdm" secondAttribute="bottom" constant="6" id="Ay7-8Z-ToN"/>
-                            <constraint firstItem="qgN-8m-u1I" firstAttribute="leading" secondItem="tGI-Yf-1KC" secondAttribute="leading" id="JYU-44-z1j"/>
-                            <constraint firstItem="URb-KI-U53" firstAttribute="leading" secondItem="Kqi-8n-4ws" secondAttribute="leading" id="Jz2-hm-ahk"/>
-                            <constraint firstItem="seN-Au-V4g" firstAttribute="leading" secondItem="URb-KI-U53" secondAttribute="leading" id="K4p-5f-Tgt"/>
-                            <constraint firstItem="seN-Au-V4g" firstAttribute="top" secondItem="jVW-JU-WcP" secondAttribute="top" id="QCy-sv-ylR"/>
-                            <constraint firstItem="URb-KI-U53" firstAttribute="top" secondItem="seN-Au-V4g" secondAttribute="bottom" constant="8" symbolic="YES" id="QzV-MU-5IW"/>
-                            <constraint firstItem="tGI-Yf-1KC" firstAttribute="leading" secondItem="JBe-e3-hdm" secondAttribute="leading" id="RDh-kX-6Ay"/>
-                            <constraint firstItem="Kqi-8n-4ws" firstAttribute="trailing" secondItem="Y47-9y-cyE" secondAttribute="trailing" id="ZDo-gz-MAh"/>
-                            <constraint firstItem="Y47-9y-cyE" firstAttribute="leading" secondItem="IDf-3S-1tc" secondAttribute="leading" id="hV8-nI-IMv"/>
-                            <constraint firstItem="seN-Au-V4g" firstAttribute="leading" secondItem="MRN-So-lBK" secondAttribute="leadingMargin" id="hdL-Al-0Hq"/>
-                            <constraint firstItem="Kqi-8n-4ws" firstAttribute="top" secondItem="URb-KI-U53" secondAttribute="bottom" constant="8" symbolic="YES" id="kLO-61-Tp4"/>
-                            <constraint firstItem="seN-Au-V4g" firstAttribute="trailing" secondItem="URb-KI-U53" secondAttribute="trailing" id="m2C-Co-UKo"/>
-                            <constraint firstItem="JBe-e3-hdm" firstAttribute="top" secondItem="tGI-Yf-1KC" secondAttribute="bottom" constant="5" id="neU-Jr-gdi"/>
-                            <constraint firstItem="qgN-8m-u1I" firstAttribute="trailing" secondItem="tGI-Yf-1KC" secondAttribute="trailing" id="nvt-kA-0ww"/>
-                            <constraint firstItem="Y47-9y-cyE" firstAttribute="top" secondItem="Kqi-8n-4ws" secondAttribute="bottom" constant="4" id="qoP-Ea-kA9"/>
-                            <constraint firstItem="qgN-8m-u1I" firstAttribute="top" secondItem="IDf-3S-1tc" secondAttribute="bottom" constant="4" id="rs8-Ue-nmX"/>
-                            <constraint firstItem="IDf-3S-1tc" firstAttribute="leading" secondItem="qgN-8m-u1I" secondAttribute="leading" id="sAR-Q0-Xsr"/>
-                            <constraint firstItem="IDf-3S-1tc" firstAttribute="trailing" secondItem="qgN-8m-u1I" secondAttribute="trailing" id="smy-hn-Olv"/>
-                            <constraint firstItem="Kqi-8n-4ws" firstAttribute="leading" secondItem="Y47-9y-cyE" secondAttribute="leading" id="tcL-Lc-T6w"/>
-                            <constraint firstItem="IDf-3S-1tc" firstAttribute="top" secondItem="Y47-9y-cyE" secondAttribute="bottom" constant="6" id="vS4-vn-Tdy"/>
+                            <constraint firstItem="rf0-cZ-xdr" firstAttribute="leading" secondItem="MRN-So-lBK" secondAttribute="leadingMargin" id="0Cg-yF-973"/>
+                            <constraint firstItem="W6G-7o-Spr" firstAttribute="trailing" secondItem="rf0-cZ-xdr" secondAttribute="trailing" id="2S9-bF-eIX"/>
+                            <constraint firstItem="BVk-t3-JTm" firstAttribute="top" secondItem="vuS-ja-M2L" secondAttribute="bottom" constant="23" id="6p3-kS-Eft"/>
+                            <constraint firstItem="rf0-cZ-xdr" firstAttribute="top" secondItem="W6G-7o-Spr" secondAttribute="bottom" constant="26" id="BNr-XU-Xe4"/>
+                            <constraint firstItem="W6G-7o-Spr" firstAttribute="leading" secondItem="jVW-JU-WcP" secondAttribute="leading" constant="20" id="Cpc-rW-hRT"/>
+                            <constraint firstItem="W6G-7o-Spr" firstAttribute="top" secondItem="jVW-JU-WcP" secondAttribute="top" id="Uoh-Or-1Ay"/>
+                            <constraint firstItem="vuS-ja-M2L" firstAttribute="trailing" secondItem="BVk-t3-JTm" secondAttribute="trailing" id="YEr-aE-Mot"/>
+                            <constraint firstItem="BVk-t3-JTm" firstAttribute="bottom" secondItem="jVW-JU-WcP" secondAttribute="bottom" id="Yy6-X9-gwH"/>
+                            <constraint firstItem="rf0-cZ-xdr" firstAttribute="trailing" secondItem="vuS-ja-M2L" secondAttribute="trailing" id="eTw-aj-0rV"/>
+                            <constraint firstItem="W6G-7o-Spr" firstAttribute="trailing" secondItem="MRN-So-lBK" secondAttribute="trailingMargin" id="eau-IS-KbT"/>
+                            <constraint firstItem="vuS-ja-M2L" firstAttribute="top" secondItem="rf0-cZ-xdr" secondAttribute="bottom" constant="27" id="kcz-fg-6g1"/>
+                            <constraint firstItem="rf0-cZ-xdr" firstAttribute="leading" secondItem="vuS-ja-M2L" secondAttribute="leading" id="kh3-q4-zNH"/>
+                            <constraint firstItem="W6G-7o-Spr" firstAttribute="leading" secondItem="BVk-t3-JTm" secondAttribute="leading" id="xuW-z4-gxt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jVW-JU-WcP"/>
                     </view>
@@ -409,13 +345,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dieta3" translatesAutoresizingMaskIntoConstraints="NO" id="awb-I9-APu">
-                                <rect key="frame" x="0.0" y="64" width="320" height="140"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="YbN-xb-Hg2"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fFc-gO-NoJ">
-                                <rect key="frame" x="0.0" y="212" width="320" height="307"/>
+                                <rect key="frame" x="0.0" y="168" width="320" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Esta opción de menú contiene hummus, un plato oriental rico en proteínas vegetales, calcio y vitaminas como tiamina y riboflavina, que permiten fortalecer el sistema muscular y nervioso. Además, es un antoxidante rico en ácido fólico.
 
@@ -444,7 +380,7 @@ Cena: una crema de verduras y una tortilla con ajos tiernos.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVy-0t-IkQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2488" y="-175"/>
+            <point key="canvasLocation" x="2723" y="-102"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EF2-aI-24Y">
@@ -455,13 +391,13 @@ Cena: una crema de verduras y una tortilla con ajos tiernos.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dieta1" translatesAutoresizingMaskIntoConstraints="NO" id="8u3-af-ew0">
-                                <rect key="frame" x="0.0" y="64" width="320" height="140"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="5YN-3h-oIo"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="M1J-pf-OSF">
-                                <rect key="frame" x="0.0" y="212" width="320" height="307"/>
+                                <rect key="frame" x="0.0" y="168" width="320" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">El tercero de los menús diarios para una dieta saludable contiene ensalada de aguacate y salmón. Además de ser ambos fuente de vitaminas y minerales, son ricos en grasas esenciales.
 
@@ -514,7 +450,7 @@ Cena: una ensalada de aguacate con láminas de salmón ahumado. Un revuelto de u
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nosotros" translatesAutoresizingMaskIntoConstraints="NO" id="sGl-Hf-HoL">
-                                <rect key="frame" x="0.0" y="64" width="320.00000000000011" height="245"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="245"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WfR-ZH-rwM">
                                 <rect key="frame" x="0.0" y="309" width="320" height="170"/>
@@ -643,27 +579,27 @@ Cena: una ensalada de aguacate con láminas de salmón ahumado. Un revuelto de u
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Selecciona una fecha (03-Ago-2019)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0E-EP-KkM">
-                                <rect key="frame" x="16" y="187" width="288" height="30"/>
+                                <rect key="frame" x="16" y="211" width="288" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="cz2-ua-NCS"/>
+                                    <constraint firstAttribute="height" constant="30" id="bSL-CX-7gK"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecciona una fecha " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joY-La-ntr">
-                                <rect key="frame" x="16" y="90" width="288" height="21"/>
+                                <rect key="frame" x="16" y="114" width="288" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="ZFi-iC-OBR"/>
+                                    <constraint firstAttribute="height" constant="21" id="4Uo-xt-ofN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu nombre" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dzb-ac-9PK">
-                                <rect key="frame" x="16" y="135" width="288" height="30"/>
+                                <rect key="frame" x="16" y="159" width="288" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hKT-MJ-Ssk"/>
+                                    <constraint firstAttribute="height" constant="30" id="9xO-rG-C3f"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -672,23 +608,23 @@ Cena: una ensalada de aguacate con láminas de salmón ahumado. Un revuelto de u
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="K0E-EP-KkM" firstAttribute="trailing" secondItem="WWJ-D0-XTz" secondAttribute="trailing" id="1UL-It-jVp"/>
-                            <constraint firstItem="joY-La-ntr" firstAttribute="leading" secondItem="QG5-l7-YMl" secondAttribute="leadingMargin" id="9Jd-Sb-bqh"/>
-                            <constraint firstItem="dzb-ac-9PK" firstAttribute="trailing" secondItem="K0E-EP-KkM" secondAttribute="trailing" id="BEm-Tf-S4g"/>
-                            <constraint firstItem="dzb-ac-9PK" firstAttribute="top" secondItem="joY-La-ntr" secondAttribute="bottom" constant="24" id="BF3-ZI-fMe"/>
-                            <constraint firstItem="joY-La-ntr" firstAttribute="top" secondItem="LpM-fB-rge" secondAttribute="top" constant="26" id="FiX-lC-gfO"/>
-                            <constraint firstItem="joY-La-ntr" firstAttribute="trailing" secondItem="QG5-l7-YMl" secondAttribute="trailingMargin" id="Hnz-xc-Sla"/>
-                            <constraint firstItem="K0E-EP-KkM" firstAttribute="top" secondItem="dzb-ac-9PK" secondAttribute="bottom" constant="22" id="KRK-mv-tit"/>
-                            <constraint firstItem="joY-La-ntr" firstAttribute="leading" secondItem="dzb-ac-9PK" secondAttribute="leading" id="Rlw-mL-Qxz"/>
-                            <constraint firstItem="wMQ-o9-VWL" firstAttribute="top" secondItem="WWJ-D0-XTz" secondAttribute="bottom" constant="89" id="ZTp-Gt-9D2"/>
-                            <constraint firstItem="WWJ-D0-XTz" firstAttribute="top" secondItem="K0E-EP-KkM" secondAttribute="bottom" constant="49" id="a4e-yi-hpB"/>
-                            <constraint firstItem="LpM-fB-rge" firstAttribute="bottom" secondItem="wMQ-o9-VWL" secondAttribute="bottom" constant="70" id="aT8-Sb-V9W"/>
-                            <constraint firstItem="dzb-ac-9PK" firstAttribute="leading" secondItem="K0E-EP-KkM" secondAttribute="leading" id="jJ7-cO-sjM"/>
-                            <constraint firstItem="joY-La-ntr" firstAttribute="trailing" secondItem="dzb-ac-9PK" secondAttribute="trailing" id="lWh-bV-Rvd"/>
-                            <constraint firstItem="WWJ-D0-XTz" firstAttribute="trailing" secondItem="wMQ-o9-VWL" secondAttribute="trailing" id="mQJ-4i-vl4"/>
-                            <constraint firstItem="WWJ-D0-XTz" firstAttribute="leading" secondItem="wMQ-o9-VWL" secondAttribute="leading" id="rHQ-tx-R1s"/>
-                            <constraint firstItem="K0E-EP-KkM" firstAttribute="leading" secondItem="WWJ-D0-XTz" secondAttribute="leading" id="sFK-7v-Th1"/>
-                            <constraint firstItem="WWJ-D0-XTz" firstAttribute="centerY" secondItem="QG5-l7-YMl" secondAttribute="centerY" id="uW3-bo-9pl"/>
+                            <constraint firstItem="K0E-EP-KkM" firstAttribute="trailing" secondItem="WWJ-D0-XTz" secondAttribute="trailing" id="4Ln-eT-fau"/>
+                            <constraint firstItem="wMQ-o9-VWL" firstAttribute="top" secondItem="WWJ-D0-XTz" secondAttribute="bottom" constant="89" id="5Aw-V5-mdU"/>
+                            <constraint firstItem="K0E-EP-KkM" firstAttribute="leading" secondItem="WWJ-D0-XTz" secondAttribute="leading" id="6I7-57-9a6"/>
+                            <constraint firstItem="K0E-EP-KkM" firstAttribute="top" secondItem="dzb-ac-9PK" secondAttribute="bottom" constant="22" id="9Ur-zc-0la"/>
+                            <constraint firstItem="dzb-ac-9PK" firstAttribute="trailing" secondItem="K0E-EP-KkM" secondAttribute="trailing" id="C1j-pX-kDZ"/>
+                            <constraint firstItem="WWJ-D0-XTz" firstAttribute="leading" secondItem="wMQ-o9-VWL" secondAttribute="leading" id="Dq9-4a-fTQ"/>
+                            <constraint firstItem="joY-La-ntr" firstAttribute="top" secondItem="LpM-fB-rge" secondAttribute="top" constant="50" id="JSZ-vf-iVy"/>
+                            <constraint firstItem="joY-La-ntr" firstAttribute="leading" secondItem="dzb-ac-9PK" secondAttribute="leading" id="RkC-A2-qHa"/>
+                            <constraint firstItem="dzb-ac-9PK" firstAttribute="leading" secondItem="K0E-EP-KkM" secondAttribute="leading" id="U0V-DU-ymv"/>
+                            <constraint firstItem="joY-La-ntr" firstAttribute="leading" secondItem="QG5-l7-YMl" secondAttribute="leadingMargin" id="bDQ-Um-uMC"/>
+                            <constraint firstItem="dzb-ac-9PK" firstAttribute="top" secondItem="joY-La-ntr" secondAttribute="bottom" constant="24" id="fbT-m4-hwf"/>
+                            <constraint firstItem="LpM-fB-rge" firstAttribute="bottom" secondItem="wMQ-o9-VWL" secondAttribute="bottom" constant="70" id="iKP-ea-f1r"/>
+                            <constraint firstItem="WWJ-D0-XTz" firstAttribute="top" secondItem="K0E-EP-KkM" secondAttribute="bottom" constant="25" id="j0e-P8-dVW"/>
+                            <constraint firstItem="joY-La-ntr" firstAttribute="trailing" secondItem="dzb-ac-9PK" secondAttribute="trailing" id="rKU-1w-TBw"/>
+                            <constraint firstItem="WWJ-D0-XTz" firstAttribute="centerY" secondItem="QG5-l7-YMl" secondAttribute="centerY" id="x89-cV-Q2j"/>
+                            <constraint firstItem="WWJ-D0-XTz" firstAttribute="trailing" secondItem="wMQ-o9-VWL" secondAttribute="trailing" id="xGM-Eu-dWH"/>
+                            <constraint firstItem="joY-La-ntr" firstAttribute="trailing" secondItem="QG5-l7-YMl" secondAttribute="trailingMargin" id="zk9-UR-av7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LpM-fB-rge"/>
                     </view>
@@ -711,13 +647,13 @@ Cena: una ensalada de aguacate con láminas de salmón ahumado. Un revuelto de u
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dieta2" translatesAutoresizingMaskIntoConstraints="NO" id="ZnS-Qw-J1Z">
-                                <rect key="frame" x="0.0" y="64" width="320" height="140"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="blj-EN-gZA"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="FZP-1k-2fH">
-                                <rect key="frame" x="0.0" y="212" width="320" height="307"/>
+                                <rect key="frame" x="0.0" y="168" width="320" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">El primero de los menús diarios para una dieta saludable contiene champiñones. Estos son antioxiodantes ricos en selenio, zinc, potasio, magnesio, fósforo, y calcio, y vitaminas A, B1, B2, B3, B5, B9, C, D y E. Además tienen proteína y fibra.
 Desayuno: un vaso de leche semidesnatada o un yogur griego sin grasa. También un puñado de cereales o una tostada de pan integral con miel o queso fresco.
@@ -755,13 +691,13 @@ Cena: un plato de champiñones salteados con orégano y eneldo</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dieta4" translatesAutoresizingMaskIntoConstraints="NO" id="X76-fc-eTd">
-                                <rect key="frame" x="0.0" y="64" width="320" height="140"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="6GE-Gj-dIF"/>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="49A-GJ-1hY">
-                                <rect key="frame" x="0.0" y="212" width="320" height="307"/>
+                                <rect key="frame" x="0.0" y="168" width="320" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">El segundo de los menús diarios para una dieta saludable lleva cuscús, en cual es rico en vitaminas del complejo B y provitaminas A. Acompañado de verduras te aportará muchos más nutrientes.
 
