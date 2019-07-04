@@ -9,17 +9,17 @@
 import UIKit
 
 class InicioPruebaViewController: UIViewController {
+    @IBOutlet weak var nombreRecibido: UILabel!
     
-    @IBOutlet weak var bienvenida: UILabel!
-    
-    var usuario:String = ""
-    var correo:String = ""
+    var recibirNombre: String!
+
     
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nombreRecibido.text = "Bienvenido: \(recibirNombre!)"
     
     }
     

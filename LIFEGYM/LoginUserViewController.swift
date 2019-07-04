@@ -95,6 +95,7 @@ class LoginUserViewController: UIViewController {
                                             self.correo = mensaje!
                                             
                                             self.performSegue(withIdentifier: "inicio", sender: self)
+                                            
                                             print(mensaje!)
                                             
                                             
@@ -226,11 +227,18 @@ class LoginUserViewController: UIViewController {
         
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "inicio" {
+        
+            //let vc = segue.destination as! InicioMenu
+            //vc.nombreRecibido = usuario.text!
+        }
         if segue.identifier == "registro" {
             var vc = segue.destination as! RegistrarUsuarioViewController
         } else if segue.identifier == "inicioLocal" {
-            var vc = segue.destination as! InicioPruebaViewController
+            let vc = segue.destination as! InicioPruebaViewController
+            vc.recibirNombre = usuario.text!
             
             
         }

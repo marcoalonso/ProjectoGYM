@@ -89,6 +89,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tT1-if-YDK"/>
                     </view>
+                    <connections>
+                        <outlet property="nombreRecibido" destination="Cqz-vx-rkt" id="ezm-nr-Eb2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cds-V8-blf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -554,6 +557,6 @@
         <image name="sin_wifi" width="147.33332824707031" height="124"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gho-Lz-RlJ"/>
+        <segue reference="zMK-0y-rPi"/>
     </inferredMetricsTieBreakers>
 </document>

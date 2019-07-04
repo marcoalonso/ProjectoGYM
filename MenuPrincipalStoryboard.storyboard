@@ -741,7 +741,7 @@ Cena: una ración de cuscús con verduras. Una pechuga de pollo al limón. Agreg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6O-lw-4t6">
                                 <rect key="frame" x="11" y="128" width="293" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="A4T-ow-Ywh"/>
+                                    <constraint firstAttribute="height" constant="34" id="hbp-pn-DTW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
                                 <state key="normal" title="hombros">
@@ -754,7 +754,7 @@ Cena: una ración de cuscús con verduras. Una pechuga de pollo al limón. Agreg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48Q-9W-apt">
                                 <rect key="frame" x="11" y="172" width="293" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="YzQ-ZO-L3Y"/>
+                                    <constraint firstAttribute="height" constant="34" id="WKb-9q-kHj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
                                 <state key="normal" title="pecho">
@@ -767,7 +767,7 @@ Cena: una ración de cuscús con verduras. Una pechuga de pollo al limón. Agreg
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvb-rC-G9E">
                                 <rect key="frame" x="13" y="214" width="288" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="ljW-Sy-PJd"/>
+                                    <constraint firstAttribute="height" constant="34" id="Qps-KV-rrN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="19"/>
                                 <state key="normal" title="triceps">
@@ -797,30 +797,42 @@ Cena: una ración de cuscús con verduras. Una pechuga de pollo al limón. Agreg
                                     <segue destination="ZUZ-5q-w6s" kind="show" id="xfQ-fo-rvq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoi-wv-3ZF">
+                                <rect key="frame" x="16" y="64" width="288" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="Cp4-MZ-ilu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="qGf-sx-m81" firstAttribute="leading" secondItem="cqT-xe-nDp" secondAttribute="leading" constant="8" id="3A9-j5-5eh"/>
-                            <constraint firstItem="a6O-lw-4t6" firstAttribute="top" secondItem="cqT-xe-nDp" secondAttribute="top" constant="64" id="3qx-dW-qqk"/>
-                            <constraint firstItem="qGf-sx-m81" firstAttribute="leading" secondItem="HaT-vQ-cvl" secondAttribute="leading" id="3zd-eg-muH"/>
-                            <constraint firstItem="48Q-9W-apt" firstAttribute="trailing" secondItem="HaT-vQ-cvl" secondAttribute="trailing" id="9CO-RE-omO"/>
-                            <constraint firstItem="qGf-sx-m81" firstAttribute="top" secondItem="jvb-rC-G9E" secondAttribute="bottom" constant="19" id="CY6-xH-ggT"/>
-                            <constraint firstItem="a6O-lw-4t6" firstAttribute="trailing" secondItem="48Q-9W-apt" secondAttribute="trailing" id="I03-Es-P3G"/>
-                            <constraint firstAttribute="trailing" secondItem="1Ze-v6-EOl" secondAttribute="trailing" id="LQH-lb-s06"/>
-                            <constraint firstItem="jvb-rC-G9E" firstAttribute="top" secondItem="48Q-9W-apt" secondAttribute="bottom" constant="8" symbolic="YES" id="R6O-xS-7EX"/>
-                            <constraint firstItem="1Ze-v6-EOl" firstAttribute="top" secondItem="cqT-xe-nDp" secondAttribute="top" id="Rbm-WG-qN5"/>
-                            <constraint firstItem="1Ze-v6-EOl" firstAttribute="leading" secondItem="UTt-7S-9Jr" secondAttribute="leading" id="S5J-Q7-7Bj"/>
-                            <constraint firstItem="jvb-rC-G9E" firstAttribute="leading" secondItem="cqT-xe-nDp" secondAttribute="leading" constant="13" id="SVb-ed-guF"/>
-                            <constraint firstItem="a6O-lw-4t6" firstAttribute="leading" secondItem="cqT-xe-nDp" secondAttribute="leading" constant="11" id="bmL-se-zsq"/>
-                            <constraint firstItem="a6O-lw-4t6" firstAttribute="trailing" secondItem="UTt-7S-9Jr" secondAttribute="trailingMargin" id="dVQ-RL-cqb"/>
-                            <constraint firstItem="HaT-vQ-cvl" firstAttribute="top" secondItem="qGf-sx-m81" secondAttribute="bottom" constant="48" id="dbF-Nj-6zY"/>
-                            <constraint firstItem="a6O-lw-4t6" firstAttribute="leading" secondItem="48Q-9W-apt" secondAttribute="leading" id="ffT-9V-E5b"/>
-                            <constraint firstItem="48Q-9W-apt" firstAttribute="centerX" secondItem="jvb-rC-G9E" secondAttribute="centerX" id="ftY-iX-dae"/>
-                            <constraint firstItem="48Q-9W-apt" firstAttribute="top" secondItem="a6O-lw-4t6" secondAttribute="bottom" constant="10" id="jHg-Mk-mAk"/>
-                            <constraint firstItem="jvb-rC-G9E" firstAttribute="trailing" secondItem="qGf-sx-m81" secondAttribute="trailing" id="jSa-yl-dHB"/>
-                            <constraint firstItem="1Ze-v6-EOl" firstAttribute="bottom" secondItem="cqT-xe-nDp" secondAttribute="bottom" id="m3L-oZ-Wo1"/>
-                            <constraint firstItem="qGf-sx-m81" firstAttribute="centerY" secondItem="UTt-7S-9Jr" secondAttribute="centerY" id="n4b-cl-Nk3"/>
-                            <constraint firstItem="cqT-xe-nDp" firstAttribute="bottom" secondItem="HaT-vQ-cvl" secondAttribute="bottom" constant="136" id="nFZ-8C-Tjq"/>
+                            <constraint firstItem="Zoi-wv-3ZF" firstAttribute="leading" secondItem="UTt-7S-9Jr" secondAttribute="leadingMargin" id="15V-j8-tht"/>
+                            <constraint firstItem="jvb-rC-G9E" firstAttribute="trailing" secondItem="qGf-sx-m81" secondAttribute="trailing" id="2ry-uN-qCj"/>
+                            <constraint firstItem="qGf-sx-m81" firstAttribute="top" secondItem="jvb-rC-G9E" secondAttribute="bottom" constant="19" id="6WI-fu-9bo"/>
+                            <constraint firstItem="1Ze-v6-EOl" firstAttribute="centerX" secondItem="Zoi-wv-3ZF" secondAttribute="centerX" id="6lD-sX-Wld"/>
+                            <constraint firstItem="jvb-rC-G9E" firstAttribute="leading" secondItem="cqT-xe-nDp" secondAttribute="leading" constant="13" id="AMb-7O-uWH"/>
+                            <constraint firstItem="cqT-xe-nDp" firstAttribute="bottom" secondItem="HaT-vQ-cvl" secondAttribute="bottom" constant="136" id="AdK-s1-Pin"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ze-v6-EOl" secondAttribute="trailing" id="CMa-ec-QD7"/>
+                            <constraint firstItem="qGf-sx-m81" firstAttribute="centerY" secondItem="UTt-7S-9Jr" secondAttribute="centerY" id="EeX-y2-3Dv"/>
+                            <constraint firstItem="1Ze-v6-EOl" firstAttribute="top" secondItem="cqT-xe-nDp" secondAttribute="top" id="GbW-UI-aAF"/>
+                            <constraint firstItem="a6O-lw-4t6" firstAttribute="top" secondItem="Zoi-wv-3ZF" secondAttribute="bottom" constant="45" id="LeA-SZ-yFJ"/>
+                            <constraint firstItem="a6O-lw-4t6" firstAttribute="leading" secondItem="48Q-9W-apt" secondAttribute="leading" id="O44-12-f1S"/>
+                            <constraint firstItem="48Q-9W-apt" firstAttribute="top" secondItem="a6O-lw-4t6" secondAttribute="bottom" constant="10" id="QSV-Ze-k5a"/>
+                            <constraint firstItem="Zoi-wv-3ZF" firstAttribute="trailing" secondItem="a6O-lw-4t6" secondAttribute="trailing" id="QVZ-Qv-1j6"/>
+                            <constraint firstItem="1Ze-v6-EOl" firstAttribute="bottom" secondItem="cqT-xe-nDp" secondAttribute="bottom" id="UY4-yx-Sc8"/>
+                            <constraint firstItem="jvb-rC-G9E" firstAttribute="top" secondItem="48Q-9W-apt" secondAttribute="bottom" constant="8" symbolic="YES" id="VQp-lB-J8D"/>
+                            <constraint firstItem="qGf-sx-m81" firstAttribute="leading" secondItem="cqT-xe-nDp" secondAttribute="leading" constant="8" id="Vpw-0K-nDl"/>
+                            <constraint firstItem="1Ze-v6-EOl" firstAttribute="leading" secondItem="UTt-7S-9Jr" secondAttribute="leading" id="XR0-5F-zAM"/>
+                            <constraint firstItem="48Q-9W-apt" firstAttribute="trailing" secondItem="HaT-vQ-cvl" secondAttribute="trailing" id="bQ6-hQ-4Ku"/>
+                            <constraint firstItem="qGf-sx-m81" firstAttribute="leading" secondItem="HaT-vQ-cvl" secondAttribute="leading" id="flh-0y-GiB"/>
+                            <constraint firstItem="HaT-vQ-cvl" firstAttribute="top" secondItem="qGf-sx-m81" secondAttribute="bottom" constant="48" id="lDT-lg-G5N"/>
+                            <constraint firstItem="a6O-lw-4t6" firstAttribute="trailing" secondItem="48Q-9W-apt" secondAttribute="trailing" id="mEn-RV-Cjl"/>
+                            <constraint firstItem="1Ze-v6-EOl" firstAttribute="top" secondItem="Zoi-wv-3ZF" secondAttribute="top" id="mwt-F5-p6f"/>
+                            <constraint firstItem="48Q-9W-apt" firstAttribute="centerX" secondItem="jvb-rC-G9E" secondAttribute="centerX" id="pKv-g4-CVN"/>
+                            <constraint firstItem="a6O-lw-4t6" firstAttribute="leading" secondItem="cqT-xe-nDp" secondAttribute="leading" constant="11" id="wKA-0Z-dzJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cqT-xe-nDp"/>
                     </view>
@@ -838,6 +850,9 @@ Cena: una ración de cuscús con verduras. Una pechuga de pollo al limón. Agreg
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="usuario" destination="Zoi-wv-3ZF" id="uo6-He-pVA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1F-Os-U0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1297,6 +1312,39 @@ Este ejercicio también ofrece la posibilidad de ejecutarlo de dos maneras: con 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GjR-h2-VJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5529.375" y="-398.23943661971833"/>
+        </scene>
+        <!--Inicio Menu-->
+        <scene sceneID="Ctt-aj-WLe">
+            <objects>
+                <viewController id="8go-bL-CJW" customClass="InicioMenu" customModule="LIFEGYM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l3a-6A-kla">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laV-Hv-RuR">
+                                <rect key="frame" x="16" y="41" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QW7-GA-uN1">
+                                <rect key="frame" x="16" y="169" width="288" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Aceptar"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jt8-0i-ebr"/>
+                    </view>
+                    <connections>
+                        <outlet property="recibirNombre" destination="laV-Hv-RuR" id="CyU-B6-N7C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3H-V1-HEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2233.125" y="-201.7605633802817"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Rh3-Wn-iKf">

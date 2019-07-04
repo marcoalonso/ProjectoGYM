@@ -9,9 +9,14 @@
 import UIKit
 
 class MenuEjerciciosViewController: UIViewController {
-
+    @IBOutlet weak var usuario: UILabel!
+    
+    var recibirUsuario: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //usuario.text = recibirUsuario!
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "musculos.jpg"))
 
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
